@@ -62,12 +62,12 @@ export const Editor: FC = () => {
       <div className={style.credit}>
         <div className={style.creditstr}>
           <p>
-            <b>The PTOOLS</b>
+            <b>The JTOOLS</b>
           </p>
-          <p>v2-{VERSION}</p>
+          <p>v3-{VERSION}</p>
           <p>&copy; Minhyeok Park</p>
         </div>
-        <img className={style.suika} src="/suika.webp" />
+        <img className={style.suika} src="https://storage.juwon.codes/jtools/suika.webp" />
       </div>
     </motion.div>
   )

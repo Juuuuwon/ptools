@@ -1,8 +1,8 @@
-# PTools
+# JTools
 A collection of tools for string conversions
 
 ## Demo
-* https://ptools.pmh.codes
+* https://jtools.pmh.codes
 
 ## Transforms
 * Regular Expression Parser (for parsing logs)
