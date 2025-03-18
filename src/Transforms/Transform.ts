@@ -2,7 +2,7 @@ import {
   Base64DecodeTransform,
   Base64EncodeTransform
 } from './Base64Transforms'
-import { DatetimeTransform } from './DatetimeTransforms'
+// import { DatetimeTransform } from './DatetimeTransforms'
 import {
   GzipCompressTransform,
   GzipDecompressTransform
@@ -15,10 +15,10 @@ import {
 } from './JSONTransforms'
 import { RegexpTransform } from './RegexpTransform'
 import { URIDecodeTransform, URIEncodeTransform } from './URITransforms'
-import { JSON2YAMLTransform, YAML2JSONTransform } from './YAMLTransforms'
+// import { JSON2YAMLTransform, YAML2JSONTransform } from './YAMLTransforms'
 import {
   PythonDictToJSONTransform,
-  JSONToPythonDictTransform
+//  JSONToPythonDictTransform
 } from './PythonTransforms'
 
 export interface TransformCheckboxOption {
@@ -98,19 +98,19 @@ export const wrapTransform = (transform: Transform): WrappedTransform => ({
 
 export const transforms: Transform[] = [
   RegexpTransform,
-  DatetimeTransform,
+  JSONBeautifyTransform,
   Base64DecodeTransform,
   Base64EncodeTransform,
   URIDecodeTransform,
   URIEncodeTransform,
-  JSONBeautifyTransform,
-  JSONSimplifyTransform,
+  // DatetimeTransform,
   JSONEscapeTransform,
   JSONUnescapeTransform,
-  JSON2YAMLTransform,
-  YAML2JSONTransform,
+  // JSON2YAMLTransform,
+  // YAML2JSONTransform,
+  JSONSimplifyTransform,
   PythonDictToJSONTransform,
-  JSONToPythonDictTransform,
+  // JSONToPythonDictTransform,
   GzipCompressTransform,
   GzipDecompressTransform
 ]
